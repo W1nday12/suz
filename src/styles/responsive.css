@@ -1,0 +1,528 @@
+/* ============ Tablet / small desktop ============ */
+@media (max-width: 860px) {
+  .page {
+    width: min(760px, 100%);
+  }
+
+  .review-hero,
+  .league-hero {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .profile-two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .goal-card {
+    min-height: 0;
+  }
+
+  .goal-visual {
+    justify-content: flex-start;
+  }
+}
+
+/* ============ Mobile ============ */
+@media (max-width: 720px) {
+  .app-main {
+    padding: 12px 14px calc(var(--nav-height) + 34px);
+  }
+
+  .topbar {
+    padding: 8px 14px;
+  }
+
+  .onboarding {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(200px, 34dvh) 1fr;
+  }
+
+  .onboarding-art {
+    padding: 20px;
+  }
+
+  .onboarding-art::after {
+    width: 340px;
+  }
+
+  .onboarding-badge {
+    top: 16px;
+    left: 18px;
+    padding: 6px 11px 6px 8px;
+    font-size: 12px;
+  }
+
+  .onboarding-mascot svg {
+    width: 130px !important;
+    height: auto !important;
+  }
+
+  .onboarding-dots {
+    bottom: 14px;
+    right: 20px;
+  }
+
+  .onboarding-panel {
+    align-items: flex-start;
+    padding: 26px 20px 40px;
+  }
+
+  .onboarding-panel > div {
+    margin: 0 auto;
+    width: min(460px, 100%);
+  }
+
+  .onboarding-panel .btn-block {
+    position: sticky;
+    bottom: 12px;
+    z-index: 2;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 22px;
+  }
+
+  .hero-side {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+  }
+
+  .hero-mascot {
+    margin: -16px 0 -22px -12px;
+  }
+
+  .hero-mascot svg {
+    width: 120px !important;
+    height: auto !important;
+  }
+
+  .quick-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .review-hero,
+  .league-hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 22px;
+  }
+
+  .review-hero-side,
+  .league-hero-side {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .review-hero-side svg {
+    width: 110px !important;
+    height: auto !important;
+  }
+
+  .league-hero-side svg {
+    width: 96px !important;
+    height: auto !important;
+  }
+
+  .dictionary-hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .dictionary-stats {
+    justify-content: space-between;
+  }
+
+  .dictionary-stats > div {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .profile-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-hero {
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+
+  .profile-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    font-size: 34px;
+  }
+
+  .profile-copy {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  .profile-copy h1 {
+    font-size: 26px;
+  }
+
+  .profile-hero-actions {
+    width: 100%;
+    align-self: auto;
+    justify-content: flex-end;
+  }
+
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom-nav {
+    left: 0;
+    bottom: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 22px 22px 0 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding: 5px 6px calc(5px + env(safe-area-inset-bottom));
+    box-shadow: 0 -8px 30px rgba(23, 53, 43, 0.12);
+  }
+
+  .nav-item {
+    min-height: 50px;
+  }
+
+  .nav-label {
+    font-size: 9.5px;
+  }
+
+  .sheet-root {
+    align-items: flex-end;
+  }
+
+  .sheet {
+    border-radius: 26px 26px 0 0;
+  }
+
+  .session-top {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+  .session-caption,
+  .session-subtitle {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .exercise-scroll {
+    padding: 12px 15px 16px;
+  }
+
+  .prompt-card {
+    padding: 15px;
+    margin-top: 7px;
+    margin-bottom: 16px;
+  }
+
+  .lesson-footer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ============ Narrow phones ============ */
+@media (max-width: 520px) {
+  .brand-sub {
+    display: none;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .stat-pill {
+    min-height: 28px;
+    padding: 0 7px;
+    font-size: 11.5px;
+  }
+
+  .topbar-settings {
+    width: 32px;
+    height: 32px;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .option {
+    min-height: 54px;
+    padding: 9px 30px;
+  }
+
+  .match-item {
+    min-height: 48px;
+    font-size: 12px;
+  }
+
+  .prompt-emoji {
+    font-size: 52px;
+  }
+
+  .outcome {
+    font-size: 12px;
+  }
+
+  .word-row {
+    grid-template-columns: 34px minmax(0, 1fr) auto;
+    grid-template-areas:
+      'emoji main status'
+      '. ru .';
+    row-gap: 2px;
+    padding: 9px 11px;
+  }
+
+  .word-emoji {
+    grid-area: emoji;
+    width: 32px;
+    height: 32px;
+    font-size: 17px;
+  }
+
+  .word-main {
+    grid-area: main;
+  }
+
+  .word-ru {
+    grid-area: ru;
+    font-size: 11px;
+  }
+
+  .word-status {
+    grid-area: status;
+  }
+
+  .word-chevron {
+    display: none;
+  }
+
+  .league-row {
+    grid-template-columns: 24px 36px minmax(0, 1fr) auto;
+    gap: 7px;
+  }
+
+  .league-streak,
+  .league-row .icon-btn {
+    display: none;
+  }
+
+  .league-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .league-xp {
+    min-width: 40px;
+  }
+
+  .league-empty {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .league-empty .btn {
+    width: 100%;
+  }
+
+  .profile-hero-actions .btn {
+    flex: 1;
+  }
+
+  .hearts-card {
+    align-items: flex-start;
+  }
+
+  .hearts-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hearts-copy {
+    align-items: flex-start;
+  }
+
+  .session-result {
+    padding-top: 0;
+  }
+
+  .result-stats strong {
+    font-size: 14px;
+  }
+
+  .type-keyboard {
+    padding: 8px;
+  }
+
+  .key {
+    width: 32px;
+    height: 32px;
+    font-size: 13.5px;
+  }
+
+  .key.key-wide {
+    width: 40px;
+  }
+
+  .confirm-card {
+    padding: 18px;
+  }
+
+  .confirm-actions {
+    flex-direction: column-reverse;
+  }
+
+  .confirm-actions .btn {
+    width: 100%;
+  }
+
+  .segmented button {
+    font-size: 10.5px;
+  }
+
+  .settings-toggle,
+  .settings-link {
+    padding: 10px;
+  }
+
+  .copy-row {
+    flex-direction: column;
+  }
+
+  .copy-row .btn {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  .share-actions {
+    flex-direction: column;
+  }
+
+  .platform-tabs button {
+    font-size: 10.5px;
+  }
+}
+
+/* ============ Very narrow ============ */
+@media (max-width: 380px) {
+  .top-stats .stat-pill:last-child {
+    display: none;
+  }
+
+  .node-row.left {
+    transform: translateX(-4%);
+  }
+
+  .node-row.right {
+    transform: translateX(4%);
+  }
+
+  .node {
+    width: 56px;
+    height: 54px;
+  }
+
+  .node-label {
+    max-width: 100px;
+  }
+
+  .quick-stat {
+    padding: 11px;
+  }
+}
+
+/* ============ Larger screens ============ */
+@media (min-width: 1100px) {
+  .app-main {
+    padding-top: 22px;
+  }
+
+  .page {
+    width: min(920px, 100%);
+  }
+
+  .hero,
+  .league-hero {
+    padding: 32px 34px;
+  }
+
+  .quick-stat {
+    padding: 15px 16px;
+  }
+
+  .unit {
+    padding: 20px 20px 14px;
+  }
+}
+
+/* ============ Desktop sheets ============ */
+@media (min-width: 720px) {
+  .sheet {
+    border-bottom: 1px solid var(--line);
+    border-radius: 28px;
+    margin-bottom: 18px;
+    max-height: 88dvh;
+  }
+
+  .sheet-body {
+    padding-bottom: 24px;
+  }
+}
+
+/* ============ Short screens ============ */
+@media (max-height: 680px) and (max-width: 720px) {
+  .onboarding {
+    grid-template-rows: 180px 1fr;
+  }
+
+  .onboarding-mascot svg {
+    width: 100px !important;
+  }
+
+  .onboarding-panel {
+    padding-top: 18px;
+  }
+}
+
+/* ============ Print ============ */
+@media print {
+  .topbar,
+  .bottom-nav,
+  .toast-stack,
+  .sheet-root,
+  .confirm-root,
+  .session-screen {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .app-main {
+    padding: 0;
+  }
+}

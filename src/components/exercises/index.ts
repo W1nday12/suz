@@ -1,0 +1,8 @@
+export { ChooseView } from './Choose'
+export { MatchView } from './Match'
+export { BuildView } from './Build'
+export { BlankView } from './Blank'
+export { TypeView } from './Type'
+export { Footer } from './Footer'
+export type { AnswerState } from './Footer'
+export type { ExerciseProps } from './types'

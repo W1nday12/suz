@@ -1,0 +1,271 @@
+/* ============ Profiles ============ */
+.profiles-sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 4px 0 8px;
+}
+
+.profiles-sheet > .muted {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.profile-option {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--bg);
+  text-align: left;
+}
+
+.profile-option.active {
+  border-color: var(--green);
+  background: var(--green-wash);
+}
+
+.profile-option-avatar {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-size: 24px;
+}
+
+.profile-option-copy {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1;
+}
+
+.profile-option-copy strong {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.profile-option-copy small {
+  color: var(--muted);
+  font-size: 10.5px;
+}
+
+.profile-option-check {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--on-green);
+}
+
+.profile-option-switch {
+  flex: none;
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.new-profile {
+  padding: 13px;
+  border-radius: 14px;
+  border: 1px dashed var(--line-strong);
+  background: var(--bg);
+}
+
+.add-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ============ Share / duel ============ */
+.share-sheet,
+.add-sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 4px 0 8px;
+}
+
+.share-sheet > .muted,
+.add-sheet > .muted {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.qr-box {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 14px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.qr-box img {
+  width: min(280px, 100%);
+  height: auto;
+  border-radius: 8px;
+}
+
+.qr-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-height: 220px;
+  justify-content: center;
+  color: #70837a;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.qr-loading svg {
+  animation: floaty 1.8s infinite ease-in-out;
+}
+
+.share-stat-row {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.share-stat-row span {
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.share-stat-row strong {
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.copy-row {
+  display: flex;
+  gap: 7px;
+}
+
+.copy-row .text-input {
+  flex: 1;
+  min-width: 0;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.copy-row .btn {
+  flex: none;
+  width: 48px;
+  min-height: 48px;
+  padding: 0;
+}
+
+.share-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.share-actions .btn {
+  flex: 1;
+}
+
+.share-sheet .fine-print {
+  justify-content: center;
+  text-align: center;
+  font-size: 10px;
+}
+
+.add-sheet .text-input.textarea {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.add-sheet code {
+  padding: 1px 4px;
+  border-radius: 4px;
+  background: var(--surface-2);
+  font-size: 10.5px;
+}
+
+.add-actions .btn {
+  min-height: 42px;
+  font-size: 12px;
+}
+
+.form-error {
+  padding: 9px 11px;
+  border-radius: 10px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.duel-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  background: var(--green-wash);
+  border: 1px solid color-mix(in srgb, var(--green) 24%, var(--line));
+}
+
+.duel-preview > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.duel-preview strong {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.duel-preview small {
+  color: var(--ink-2);
+  font-size: 10.5px;
+}
+
+.add-hint {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 10px 11px;
+  border-radius: 11px;
+  background: var(--bg);
+  border: 1px dashed var(--line-strong);
+  color: var(--muted);
+}
+
+.add-hint svg {
+  flex: none;
+  margin-top: 1px;
+}
+
+.add-hint p {
+  font-size: 10.5px;
+  line-height: 1.45;
+}
