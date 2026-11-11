@@ -39,6 +39,13 @@ npm run content:check
 npm run build
 ```
 
+Экспорт контента для носителя (CSV + HTML):
+
+```bash
+npm run content:check
+npm run content:export
+```
+
 ## Публикация
 
 PWA: **https://w1nday12.github.io/suz/**
