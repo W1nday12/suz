@@ -1,0 +1,16 @@
+{
+  "appId": "com.w1nday12.suz",
+  "appName": "Сүз",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "backgroundMode": true,
+    "allowMixedContent": false
+  },
+  "ios": {
+    "contentInset": "automatic",
+    "backgroundMode": true
+  }
+}
