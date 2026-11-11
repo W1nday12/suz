@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Сүз">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12805E"/>
+      <stop offset="1" stop-color="#0A4E3A"/>
+    </linearGradient>
+    <linearGradient id="petal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F07A58"/>
+      <stop offset="1" stop-color="#D94F3D"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8FD9B6"/>
+      <stop offset="1" stop-color="#4FB98A"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#bg)"/>
+  <g opacity=".18" fill="none" stroke="#F6EBD4" stroke-width="3">
+    <path d="M56 128c34-36 66-36 100 0M356 128c34-36 66-36 100 0"/>
+    <path d="M56 392c34 36 66 36 100 0M356 392c34 36 66 36 100 0"/>
+    <circle cx="256" cy="256" r="212"/>
+    <circle cx="256" cy="256" r="236"/>
+  </g>
+  <path d="M256 292v132" stroke="#8FD9B6" stroke-width="26" stroke-linecap="round"/>
+  <path d="M256 348c-44-8-72-38-76-82 46 2 74 32 76 82Z" fill="url(#leaf)"/>
+  <path d="M256 386c44-8 72-38 76-82-46 2-74 32-76 82Z" fill="url(#leaf)" opacity=".9"/>
+  <path d="M256 118c-18 26-20 52-10 78 8 20 8 38-2 56 22 12 46 12 68 0-10-18-10-36-2-56 10-26 8-52-10-78-12 16-20 26-22 40-4-14-12-24-22-40Z" fill="url(#petal)"/>
+  <path d="M256 138c-10 20-12 38-6 56 4 12 4 22-2 32 8 6 18 8 28 4-6-12-8-24-4-38 4-18 2-36-8-54-2 0-6 0-8 0Z" fill="#F7A07E" opacity=".65"/>
+  <g fill="#17352B">
+    <ellipse cx="238" cy="238" rx="6.5" ry="8"/>
+    <ellipse cx="274" cy="238" rx="6.5" ry="8"/>
+  </g>
+  <path d="M242 258c9 8 19 8 28 0" fill="none" stroke="#17352B" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="222" cy="256" r="8" fill="#F2B441" opacity=".55"/>
+  <circle cx="290" cy="256" r="8" fill="#F2B441" opacity=".55"/>
+</svg>
