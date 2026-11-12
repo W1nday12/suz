@@ -63,7 +63,24 @@ Safari → «Поделиться» → «На экран "Домой"».
 
 ### Установка на Android
 
-Открыть ссылку в Chrome → «Установить приложение» (или меню → «Добавить на главный экран»).
+**Вариант 1 — PWA:** открыть ссылку в Chrome → «Установить приложение» (или меню → «Добавить на главный экран»).
+
+**Вариант 2 — APK:** [suz-app-release.apk](https://github.com/W1nday12/suz/releases/download/v1.0.0/suz-app-release.apk) (~3.6 MB, подписан).
+
+Если раньше была установлена debug-версия, её нужно сначала удалить — подписи не совпадают:
+
+```bash
+adb uninstall com.w1nday12.suz
+adb install -r suz-app-release.apk
+```
+
+Пересобрать APK после изменений:
+
+```bash
+npm run build:app
+npx cap sync android
+cd android && ./gradlew assembleRelease
+```
 
 ## Контент
 
